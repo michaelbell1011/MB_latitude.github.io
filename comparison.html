@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Latitude Analyses Comparison</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-default" style="background-color:rgb(230, 230, 230); margin-bottom: 0%;">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <!-- this is the burger menu button that populates on small screen
+        note the data-target points to the standard navbarMenu ID below which is activated by JS package-->
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarMenu" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+        <!-- set this brand icon to return home -->
+        <a class="navbar-brand" href="index.html">Latitude</a>
+      </div>
+        <!-- right side of navbar -->
+      <div class="collapse navbar-collapse" id="navbarMenu"> 
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="max_temp.html">Max Temperature</a></li>
+              <li><a href="humidity.html">Humidity</a></li>
+              <li><a href="clouds.html">Cloudiness</a></li>
+              <li><a href="wind_speed.html">Wind Speed</a></li>
+            </ul>
+          <!-- use 'li class="active"' when on the page for the following -->
+          <li class="active"><a href="comparison.html">Comparison</a></li>
+          <li><a href="data.html">Data</a></li>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+  <!-- /.navbar-collapse -->
+
+
+  <!-- start of page content -->
+  <!-- grid of graph images -->
+  <div class="container-fluid" style="margin-top: 0%;">
+    <h3>Comparison</h3>
+    <p>Click any of the thumbnails below to navigate to the page for that analysis.</p>
+    <hr>  
+    <div class="row">
+        <div class="col-sm-6"> 
+            <a href="max_temp.html"><img src="Resources/assets/images/temp.png" alt="Temperature by city latitude" class="img-responsive"></a>
+            <hr>                
+        </div>
+        <div class="col-sm-6">
+            <a href="wind_speed.html"><img src="Resources/assets/images/wind.png" alt="Wind speed by city latitude" class="img-responsive"></a>
+            <hr>
+        </div>            
+    </div>
+    <div class="row">
+        <div class="col-sm-6"> 
+            <a href="humidity.html"><img src="Resources/assets/images/humid.png" alt="Humidity by city latitude" class="img-responsive"></a>  
+            <hr>              
+        </div>
+        <div class="col-sm-6">
+            <a href="clouds.html"><img src="Resources/assets/images/clouds.png" alt="Cloudiness by city latitude" class="img-responsive"></a>
+            <hr>
+        </div>            
+    </div>
+  </div>
+
+
+  <!-- bootstrap javascript packages that listens to click events for the navbar -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+
+</body>
+
+</html>
